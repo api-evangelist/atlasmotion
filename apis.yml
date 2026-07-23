@@ -1,21 +1,44 @@
 aid: atlasmotion
-name: Atlasmotion
-description: 'Atlasmotion is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead awaiting
-  the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/atlasmotion.png
+name: Atlas Motion Systems
+description: 'Atlas Motion Systems (atlasmotion.com) designs and builds brushless DC (BLDC)
+  motors and actuators for defense and robotics applications, engineered around a customer''s
+  specific program and manufactured at scale. The public web presence is a single-page
+  marketing site (hero plus a contact page); it is a hardware company that does not publish
+  a developer portal, public API, SDKs, documentation, or well-known discovery surface.
+  This profile was seeded as a Homebrew-portfolio lead and enriched with verifiable
+  identity and live domain-security probe data only. Enrichment found no API surface to
+  harvest.'
 url: https://raw.githubusercontent.com/api-evangelist/atlasmotion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - homebrew
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: hardware-no-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Developer Tools
+- Robotics
+- Hardware
+- Motors
+- Actuators
+- BLDC
+- Defense
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atlasmotion-domain-security.yml
 - type: Website
   url: https://atlasmotion.com
+- type: Support
+  url: https://atlasmotion.com/contact
+- type: X
+  url: https://x.com/atlasmotion
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
